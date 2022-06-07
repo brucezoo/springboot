@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bruce.springboot.mapper.SysUserBasicMapper">
+
+    <resultMap id="BaseResultMap" type="com.bruce.springboot.model.entity.SysUserBasicEntity">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="account" column="account" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="sex" column="sex" jdbcType="TINYINT"/>
+        <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="company_name" column="company_name" jdbcType="VARCHAR"/>
+        <result property="license_url" column="license_url" jdbcType="VARCHAR"/>
+        <result property="points" column="points" jdbcType="INTEGER"/>
+        <result property="inviter_uid" column="inviter_uid" jdbcType="INTEGER"/>
+        <result property="source" column="source" jdbcType="TINYINT"/>
+        <result property="status" column="status" jdbcType="TINYINT"/>
+        <result property="add_time" column="add_time" jdbcType="INTEGER"/>
+        <result property="expire_time" column="expire_time" jdbcType="INTEGER"/>
+        <result property="is_expire" column="is_expire" jdbcType="TINYINT"/>
+        <result property="is_open" column="is_open" jdbcType="TINYINT"/>
+        <result property="last_login" column="last_login" jdbcType="INTEGER"/>
+        <result property="is_ci_login" column="is_ci_login" jdbcType="TINYINT"/>
+        <result property="is_deleted" column="is_deleted" jdbcType="TINYINT"/>
+        <result property="profile_source" column="profile_source" jdbcType="TINYINT"/>
+        <result property="is_jd_recommend" column="is_jd_recommend" jdbcType="BOOLEAN"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,account,password,
+        name,sex,avatar,
+        phone,email,company_name,
+        license_url,points,inviter_uid,
+        source,status,add_time,
+        expire_time,is_expire,is_open,
+        last_login,is_ci_login,is_deleted,
+        profile_source,is_jd_recommend
+    </sql>
+</mapper>
