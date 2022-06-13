@@ -5,9 +5,9 @@ spring:
   application:
     name: bruce-zhu
   datasource:
-    url: jdbc:mysql://192.168.140.215:3306/geebox_2_0?characterEncoding=utf8&allowMultiQueries=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://117.78.44.77:3306/geebox_2_0?characterEncoding=utf8&allowMultiQueries=true&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: root
-    password: 111111
+    password: SaRFq2Nm%Wd2*tM4
     driver-class-name: com.mysql.jdbc.Driver
     # 使用druid连接池
     type: com.alibaba.druid.pool.DruidDataSource

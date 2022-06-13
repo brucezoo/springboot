@@ -17,7 +17,9 @@ public class HelloController {
     private RestTemplate restTemplate;
 
     @GetMapping("/helloWorld")
+    @CrossOrigin(origins = "http://192.168.163.207:8081")
     public String helloWorld() {
+        System.out.println("=== success ===");
         return "Hello,World";
     }
 
