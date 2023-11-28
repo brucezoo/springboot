@@ -65,3 +65,6 @@ config:
     MaxTotal: 10
     TestOnBorrow: true
     UsePool: true
+
+sms:
+  enabled: false
