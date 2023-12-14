@@ -54,15 +54,15 @@ config:
     port: 9200
   redis:
     host: 114.116.52.156
-    port: 65015
-    password: HKbP34bmVQlqiJRn!
+    port: 65057
+    password: QeXPfCe3ht@wvFvC
     index: 0
-    timeout: 3000
+    timeout: 10000
     maxWait: -1
-    maxIdle: 300
-    minIdle: 50
+    maxIdle: 5
+    minIdle: 1
     MaxWaitMillis: 10000
-    MaxTotal: 10
+    MaxTotal: 5
     TestOnBorrow: true
     UsePool: true
 
